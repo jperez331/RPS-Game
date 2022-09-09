@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	background-color: #3cead0;
+}
+#header-div {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+#game-header {
+	background-color: #eb4949;
+	padding: 20px;
+	margin: 20px;
+	width: fit-content;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: xxx-large;
+	font-family: "Roboto Mono", monospace;
+	box-shadow: 8px 10px 10px #8f6326;
+	border-radius: 15px;
+}
