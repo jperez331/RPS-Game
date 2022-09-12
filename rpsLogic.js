@@ -55,14 +55,19 @@ let playerCounter = 0;
 
 function oneRound() {
   let roundResult = playRound(getComputerChoice(),userChoice );
+  let playerScore = document.getElementById('player-score');
+  let cpuScore = document.getElementById('cpu-score');
+
   if (roundResult === "A tie!!!"){
     console.log("If you read this, is a tie")
   }
   else if (roundResult === "You lose!!!"){
     computerCounter+=1;
+    cpuScore.textContent = computerCounter;
   }
   else if (roundResult === "You win!!!"){
     playerCounter+=1;
+    playerScore.textContent = playerCounter;
   }
   endgame(playerCounter,computerCounter)
   // console.log(playerCounter, computerCounter);
@@ -71,6 +76,6 @@ function oneRound() {
 function endgame(playerCounter, computerCounter){
   let dynamicDivEnd = document.getElementById('feedback');
   if(playerCounter === 5 || computerCounter === 5){
-    dynamicDivEnd.textContent = "Game Over";
+    dynamicDivEnd.textContent = "Game Over Retry?";
   }
 }
