@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>RPS Game</title>
 		<script src="https://kit.fontawesome.com/c1dfb199ba.js" crossorigin="anonymous"></script>
-		<script src="logic.js"></script>
+		<script src="rpsLogic.js"></script>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 
@@ -25,15 +25,15 @@
 				<div id="weapon-selector">
 					<div class="weapons">
 						<img src="/img/Rock.png" alt="Rock" />
-						<input type="button" value="Rock"></input>
+						<input id="rckBtn" class="btn" onclick="game(event);" type="button" value="Rock"></input>
 					</div>
 					<div class="weapons">
 						<img src="/img/paper.png" alt="paper" />
-						<input type="button" value="Paper"></input>
+						<input id="pprBtn" class="btn" onclick="game(event);" type="button" value="Paper"></input>
 					</div>
 					<div class="weapons">
 						<img src="/img/scissors.png" alt="scissors" />
-						<input type="button" value="Scissors"></input>
+						<input id="scsBtn" class="btn" onclick="game(event);" type="button" value="Scissors"></input>
 					</div>
 				</div>
 				<div id="score-board">
@@ -49,7 +49,7 @@
 				</div>
 				<div class="dynamic-container">
 					<div id="feedback">
-						Dynamic response
+						Let´s Start!!!
 					</div>
 				</div>
 			</div>

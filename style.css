@@ -73,7 +73,7 @@ body {
 	display: flex;
 	align-content: space-between;
 	justify-content: center;
-	margin: 15px 0px;
+	margin: 0px 0px;
 }
 .weapons {
 	display: flex;
@@ -148,7 +148,7 @@ body {
 	align-items: center;
 }
 #feedback {
-	margin-top: 30px;
+	margin-top: 0px;
 	padding: 15px 50px;
 	background-color: var(--white);
 	color: var(--green1);
