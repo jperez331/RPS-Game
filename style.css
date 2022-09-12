@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap");
+
+:root {
+	--green1: #04401e;
+	--green2: #045929;
+	--green3: #048c3f;
+	--green4: #0cf287;
+	--green5: #06bf69;
+	--white: #bdead5;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: "Roboto Mono", monospace;
+	color: var(--white);
+}
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background: linear-gradient(180deg, #045929 -12.22%, #01180b 114.1%);
+}
+#header-div {
+	width: 100%;
+	height: 20%;
+	display: flex;
+	justify-content: center;
+}
+#game-header {
+	width: 910px;
+	height: 106.01px;
+	background: #048c3f;
+	box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 48px;
+	margin-top: 40px;
+}
+#main {
+	height: 70%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.game-board {
+	width: 800px;
+	height: 670px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+#main--title {
+	display: flex;
+	justify-content: center;
+	margin-top: 0px;
+}
+#main--title__text {
+	color: var(--green3);
+	font-size: 36px;
+}
+#weapon-selector {
+	display: flex;
+	align-content: space-between;
+	justify-content: center;
+	margin: 0px 0px;
+}
+.weapons {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+}
+
+.weapons img {
+	margin-bottom: 20px;
+}
+.weapons input {
+	padding: 5px 10px;
+	background: #04401e;
+	border: 0.5px solid #045929;
+	box-shadow: -3px -3px 4px rgba(255, 255, 255, 0.25),
+		3px 3px 6px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	color: var(--green4);
+	font-size: 26px;
+	transition: all 0.1s;
+	transform: scale(1);
+}
+.weapons input:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+}
+#score-board {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 20px;
+	margin: 5px 0;
+	border-top: 1px solid var(--green5);
+	border-bottom: 1px solid var(--green5);
+}
+.score-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border: 1px solid var(--green5);
+	border-radius: 25px;
+	width: 207px;
+	height: 142px;
+}
+.score-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 15px;
+	width: 160px;
+	border-bottom: 1px solid var(--green5);
+	font-size: 20px;
+	color: var(--green3);
+}
+.score {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+	color: var(--green4);
+}
+.vs {
+	font-size: 50px;
+	color: var(--green4);
+}
+.dynamic-container {
+	width: 800px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#feedback {
+	margin-top: 0px;
+	padding: 15px 50px;
+	background-color: var(--white);
+	color: var(--green1);
+	font-size: 48px;
+	border-radius: 25px;
+}
+
+/* footer styles begins here */
+footer {
+	height: 10%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--green1);
+}
+#footer-container {
+	width: 70%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer-divs {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.round-btn {
+	display: flex;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	padding: 4px;
+	margin: 0 20px;
+	background: #04401e;
+	box-shadow: -2px -2px 2px rgba(181, 181, 181, 0.27),
+		2px 2px 2px rgba(0, 0, 0, 0.25);
+	font-size: 20px;
+}
+#footer-text p {
+	font-family: "Montserrat Alternates", sans-serif;
+	font-size: 15px;
+}
