@@ -75,7 +75,13 @@ function oneRound() {
 
 function endgame(playerCounter, computerCounter){
   let dynamicDivEnd = document.getElementById('feedback');
+  let scsBtn = document.getElementById('scsBtn');
+  let pprBtn = document.getElementById('pprBtn');
+  let rckBtn = document.getElementById('rckBtn');
   if(playerCounter === 5 || computerCounter === 5){
     dynamicDivEnd.textContent = "Game Over Retry?";
+    scsBtn.disabled = true;
+    rckBtn.disabled = true;
+    pprBtn.disabled = true;
   }
 }
